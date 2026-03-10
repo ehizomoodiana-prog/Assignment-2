@@ -1,55 +1,88 @@
-# Assignment-2
-3-Page website for Zoehi's Shake Shack
+Assignment 3: Zoehi's Shake Shack
 
-Ehizomo Ogbiede - Odiana
+Name: Ehizomo Ogbiede-Odiana
 
 Student Number: 101368940
 
-Brief Description of the Client and Site’s Purpose
 
-The client is the Product Manager of ZOEHI, a restaurant lounge franchise launching ZOEHI’S SHAKE SHACK, a protein milkshake lounge for athletes and gym-goers. The purpose of the site is to introduce the brand, communicate its focus on functional nutrition and community, and encourage consumers to visit the lounge or engage with the brand.
+Project Overview
 
-Any design changes you made from Assignment 1 and why?
-
-
-Feedback I Received
-
-Positive Feedback
-
-All testers said the page looked fun and eye-catching and the brand felt social and community-focused, not just about protein. This feedback reflected in assignment 2 espcecially in the style.css section that was specially curated to fit the milkshake aesthetic palette
-
-Constructive Feedback
-
-People felt that the hero image was a bit too large and distracted from the headline and wanted quicker reassurance that the shakes were actually healthy, not just treats. To tackle this criticism, I made all the meida in the website smaller and plainer to keep focus on the information and making the colours less contrasting to keep the website more focused. Additionally, I designed the home page to be more focused on nutrition to emphasis the health benefits.
-
-"One classmate suggested clearer emphasis on the community and lounge aspect earlier on the page." To tackle this criticism, I briefly introduced the Lounge and community aspects in the home page but made Page 2 all about the the communtiy and Lounge experince.
+The client is the Product Manager for ZOEHI, a restaurant lounge franchise. I built a site for Zoehi’s Shake Shack, a protein milkshake lounge designed for athletes. The site’s goal is to showcase their functional nutrition, build a community, and get customers to visit the lounge.
 
 
-AI usage documentation.
+Fixes from Assignment 2
+
+I lost marks on CSS design and code quality last time (mostly due to inline     styles), so I made the following improvements:
+
+- Cleaned up CSS: Removed all style="..." attributes and moved them to a single, organized styles.css file.
+
+- Fixed HTML Structure: Added the missing <!doctype html>, fixed a duplicate id="contact", and moved the footer script into main.js.
+
+- Consistency: Fixed broken Google Font links on the Experience and Contact pages and corrected the footer address.
+
+- UI Tweaks: Reordered the menu so filters appear above the grid and centered the contact form using Flexbox.
 
 
-For this project,I limited my use of AI following the teacher's instructions and the assignment requirements. Most of my work relied on the class slides specifically for the contact form and on W3schools HTML and CSS tutorials to code the website. Because of this, the website’s code is relatively simple and includes some repetition, as I focused on understanding and applying the basics myself.
 
-I did use AI, particularly ChatGPT, when I had problems I couldn’t solve on my own or needed assistance with. Below are the specific prompts I used:
+JavaScript Features
+Feature
+How it Works
 
-“What are the best colours to use for my colour palette to fit the strawberry milkshake aesthetic”
+1. Dynamic Nav
+JS injects a hamburger menu for mobile. It toggles a .nav-open class to show/hide the links.
 
-“How to make the footer in CSS style to make it lined up horizontally”
+2. Form Validation
+Validates name, email, and message length. JS injects error messages dynamically so the HTML stays clean.
 
-“How to resize my hero media photos to make them fit in well and be a bit smaller”
+3. Back to Top
+A button is created via JS that appears after scrolling 300px. It uses scrollTo for a smooth finish.
 
-“How to do this: Deploy your site to GitHub Pages from VS Code”
+4. Menu Rendering
+The menu isn't in the HTML; it’s an array of 10 objects in JS. I used a loop to build and "draw" the cards.
+
+5. FAQ Accordion
+Clicking a question toggles an .open class. I set it up so only one question can be open at a time.
+
+6. Live Filters
+Combined a search bar and category buttons. It filters the array in real-time as you type or click.
+
+7. External API
+Uses fetch with the MealDB API to pull a random healthy recipe onto the Experience page.
 
 
-I also used AI to help write some of the text and messaging for my website. Here are a few examples of AI‑generated content I included:
 
- “Zoehi’s. Shakes that actually feel good. Protein shakes made to taste like something you’d order for fun.”
- 
- “Why people come back. Everything is built around balance. Shakes that support your body and still feel like a treat.”
- 
- “The Zoehi’s lounge. A space to sit, recharge, and spend time with people who care about feeling good.”
-
- “What people say.‘I finally found a protein shake I actually enjoy drinking.’”
+My Biggest Challenge was getting the search bar and category filters to work together. I had to create a shared function so that filtering by "Vegan" didn't ignore what was typed in the search box.
 
 
-Although AI helped me troubleshoot certain issues and generating text for my messaging, the majority of the coding work was done by myself as I spent five days developing the site, and most problems were solved through my own trial, error, and learning. 
+
+AI Usage 
+
+I used Claude.ai  to help understand the JavaScript features for the assignment, alongside the class slides and resources provided, by building my code based on what I learned from the slides and resources provided and then using Claude to debug or explain what i didn't understand. I also used it to audit my HTML for bugs and organize my CSS file.
+
+
+
+What I learned
+
+Working through this process taught me several things I wouldn't have picked up from the code alone:
+
+
+Why defer matters: Claude explained that placing <script src="main.js" defer> before </body> is better than a bare script tag, because defer guarantees the DOM is ready without needing a DOMContentLoaded wrapper (though I kept the wrapper for clarity)
+
+Duplicate IDs are a real bug:  I hadn't noticed that id="contact" appeared on both the footer and a section in contact.html. Duplicate IDs break document.getElementById() and fail HTML validation
+
+Inline styles affect grades for a reason: the teacher's feedback made more sense after seeing how replacing style="margin-top:1.5rem" with .form-message-row makes the CSS the single source of truth for layout decisions
+
+async/await vs .then():  Claude used async/await for the API fetch (Feature 7) and explained that it reads more clearly than chained .then() calls, while doing the same thing under the hood
+
+
+
+Website Map
+
+Home ----  index.html---- Hero sections, why people come back, shake menu (Features 4 + 6), nutrition + FAQ (Feature 5)
+
+Experience ----- experience.html ---- Brand story, recipe inspiration (Feature 7), what sets us apart, community, testimonials
+
+Visit ---- contact.html ----- Location info, contact form (Feature 2)
+
+All pages share: styles.css, main.js (Features 1 + 3 run on every page)
+
