@@ -1,244 +1,268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The ZOEHI Experience | Shake Shack</title>
+	<title>The Zoehi's Experience | Shake Shack</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 	<header class="site-header">
-	<div class="container header-inner">
-		<a href="index.html" class="brand" aria-label="ZOEHI’S Shake Shack">
-			<span class="brand-name">ZOEHI’S Shake Shack</span>
-		</a>
+		<div class="container header-inner">
+			<a href="index.html" class="brand" aria-label="Zoehi's Shake Shack">
+				<span class="brand-name">Zoehi's Shake Shack</span>
+			</a>
 
-		<nav class="nav" aria-label="Main navigation">
-			<ul class="nav-list">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="experience.html" aria-current="page">Experience</a></li>
-				<li><a href="contact.html">Visit</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+			<!-- Hamburger button is injected here by JS (Feature 1) -->
 
-<main>
+			<nav class="nav" aria-label="Main navigation">
+				<ul class="nav-list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="experience.html" aria-current="page">Experience</a></li>
+					<li><a href="contact.html">Visit</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-	<!-- PAGE HERO -->
-	<section class="hero">
-		<div class="container hero-grid">
-			<div class="hero-copy">
-				<h1>The Zoehi’s experience</h1>
-				<p class="lead">
-					Zoehi’s Shake Shack isn’t just somewhere you stop for a drink.
-					It’s a space built around balance, where taking care of yourself
-					still feels enjoyable.
+	<main>
+
+		<!-- PAGE HERO -->
+		<section class="hero">
+			<div class="container hero-grid">
+				<div class="hero-copy">
+					<h1>The Zoehi's experience</h1>
+					<p class="lead">
+						Zoehi's Shake Shack isn't just somewhere you stop for a drink.
+						It's a space built around balance, where taking care of yourself
+						still feels enjoyable.
+					</p>
+				</div>
+
+				<div class="hero-media" aria-hidden="true">
+					<img
+						src="https://image2url.com/r2/default/images/1770773006436-3933a2bc-f99f-4e3d-8a49-7dd801d1de38.jpg"
+						alt="">
+				</div>
+			</div>
+		</section>
+
+		<!-- BRAND STORY -->
+		<section class="values container">
+			<h2 class="section-title">Why we started</h2>
+			<p class="section-sub">
+				Fitness and nutrition can feel overwhelming.
+				Zoehi's was created to make it simpler, more welcoming,
+				and easier to stick with.
+			</p>
+
+			<div class="grid highlights">
+				<article class="card">
+					<h3>Balance matters</h3>
+					<p>
+						We focus on consistency, not extremes.
+						Our shakes support your goals without making food feel stressful.
+					</p>
+				</article>
+
+				<article class="card">
+					<h3>Clear and honest</h3>
+					<p>
+						What you see is what you get.
+						Macros are easy to read and ingredients stay straightforward.
+					</p>
+				</article>
+
+				<article class="card">
+					<h3>People come first</h3>
+					<p>
+						Making progress is easier when you're not doing it alone.
+						Community is a big part of what we value.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<!-- RECIPE INSPIRATION — Feature 7 (MealDB API) -->
+		<section class="nutrition">
+			<div class="container">
+				<h2 class="section-title">Recipe inspiration</h2>
+				<p class="section-sub">
+					Pair your shake with a great meal. Here's a random recipe for you.
+				</p>
+
+				<div id="recipe-card"></div>
+
+				<button id="new-recipe-btn" class="btn btn-primary recipe-btn">
+					Get Another Recipe
+				</button>
+			</div>
+		</section>
+
+		<!-- WHAT SETS ZOEHI'S APART -->
+		<section class="nutrition">
+			<div class="container">
+				<h2 class="section-title">What sets Zoehi's apart</h2>
+				<p class="section-sub">
+					We combine functional nutrition with a relaxed space
+					that feels easy to return to.
+				</p>
+
+				<div class="nutrition-grid">
+					<div class="nutr-card">
+						<h4>Comfy Cafe Design</h4>
+						<p>
+							Warm colours, comfortable seating,
+							and an atmosphere that feels calm instead of intimidating.
+						</p>
+					</div>
+
+					<div class="nutr-card">
+						<h4>Flexible options</h4>
+						<p>
+							Whether you're focused on recovery, muscle gain,
+							or just want something enjoyable, there's a clear choice for you.
+						</p>
+					</div>
+
+					<div class="nutr-card">
+						<h4>Made to fit your day</h4>
+						<p>
+							Stop in quickly or stay a while.
+							Zoehi's works around real schedules and real routines.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- COMMUNITY EXPERIENCE -->
+		<section class="community container">
+			<h2 class="section-title">A place to connect</h2>
+			<p class="section-sub">
+				Zoehi's is meant to feel social without being overwhelming.
+			</p>
+
+			<div class="community-grid">
+				<article class="comm-card">
+					<img
+						src="https://image2url.com/r2/default/images/1770773200363-f526e0eb-bcf4-49bf-8fb2-0cbc6a42d7df.jpg"
+						alt="People socializing in a lounge">
+					<h4>Good energy</h4>
+					<p>
+						A comfortable space to meet people,
+						catch up with friends, or unwind after a workout.
+					</p>
+				</article>
+
+				<article class="comm-card">
+					<img
+						src="https://image2url.com/r2/default/images/1770773353587-9bc625e4-0168-4cb4-b4f0-db1030db1db7.jpg"
+						alt="Group fitness community">
+					<h4>Shared goals</h4>
+					<p>
+						Being around others who care about their health
+						can be motivating without feeling competitive.
+					</p>
+				</article>
+
+				<article class="comm-card">
+					<img
+						src="https://image2url.com/r2/default/images/1770773180468-a97ad911-d9df-44e9-8329-10b236e5b459.jpg"
+						alt="People enjoying drinks together">
+					<h4>Take your time</h4>
+					<p>
+						Comfortable seating, Wi-Fi, and a laid-back vibe
+						that makes it easy to stay longer than planned.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<!-- TESTIMONIALS -->
+		<section class="testimonials container">
+			<h2 class="section-title">What people say</h2>
+
+			<div class="grid testimonials-grid">
+				<article class="testimonial">
+					<blockquote>
+						"I finally found a protein shake I actually enjoy drinking.
+						The chocolate one tastes like dessert, not powder."
+					</blockquote>
+					<cite>— Serena Williams, competitive athlete</cite>
+				</article>
+
+				<article class="testimonial">
+					<blockquote>
+						"I stop by even on rest days. It's filling, not overly sweet,
+						and it doesn't feel heavy."
+					</blockquote>
+					<cite>— Tom Cruise, personal trainer</cite>
+				</article>
+
+				<article class="testimonial">
+					<blockquote>
+						"The lounge nights are my favourite. Good music, good people,
+						and really good shakes."
+					</blockquote>
+					<cite>— Terry Crews, regular</cite>
+				</article>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-grid">
+			<div>
+				<h3>Main lounge</h3>
+				<p>403 Jeune Toille Boulevard</p>
+				<p>Downtown Athletic District</p>
+				<p>Free parking available</p>
+			</div>
+
+			<div>
+				<h3>Hours</h3>
+				<p>Monday to Friday: 6:00 AM – 10:00 PM</p>
+				<p>Saturday and Sunday: 8:00 AM – 8:00 PM</p>
+				<p>Open daily</p>
+			</div>
+
+			<div>
+				<h3>Your first shake is on us</h3>
+				<p>
+					New here? Sign up for our community list and enjoy a free shake on your first visit.
 				</p>
 			</div>
+		</div>
 
-			<div class="hero-media" aria-hidden="true">
-				<img src="https://image2url.com/r2/default/images/1770773006436-3933a2bc-f99f-4e3d-8a49-7dd801d1de38.jpg"
-				     alt="">
+		<div class="container footer-grid">
+			<div>
+				<h4>Contact</h4>
+				<p>zoehis@gmail.com</p>
+				<p>+1 (343) 555-4567</p>
+			</div>
+
+			<div>
+				<h4>Follow</h4>
+				<p>
+					<a href="#">Instagram</a> • <a href="#">TikTok</a> • <a href="#">Facebook</a>
+				</p>
 			</div>
 		</div>
-	</section>
+
+		<div class="footer-bottom">
+			<!-- Year is set by JS in main.js -->
+			© <span id="year"></span> Zoehi's Shake Shack. All rights reserved.
+		</div>
+	</footer>
 
 	
+	<script src="main.js"></script>
 
-
-
-	<!-- BRAND STORY -->
-	<section class="values container">
-		<h2 class="section-title">Why we started</h2>
-		<p class="section-sub">
-			Fitness and nutrition can feel overwhelming.
-			Zoehi’s was created to make it simpler, more welcoming,
-			and easier to stick with.
-		</p>
-
-		<div class="grid highlights">
-			<article class="card">
-				<h3>Balance matters</h3>
-				<p>
-					We focus on consistency, not extremes.
-					Our shakes support your goals without making food feel stressful.
-				</p>
-			</article>
-
-			<article class="card">
-				<h3>Clear and honest</h3>
-				<p>
-					What you see is what you get.
-					Macros are easy to read and ingredients stay straightforward.
-				</p>
-			</article>
-
-			<article class="card">
-				<h3>People come first</h3>
-				<p>
-					Making progress is easier when you’re not doing it alone.
-					Community is a big part of what we value.
-				</p>
-			</article>
-		</div>
-	</section>
-
-	<!-- WHAT MAKES IT DIFFERENT -->
-	<section class="nutrition">
-		<div class="container">
-			<h2 class="section-title">What sets Zoehi’s apart</h2>
-			<p class="section-sub">
-				We combine functional nutrition with a relaxed space
-				that feels easy to return to.
-			</p>
-
-			<div class="nutrition-grid">
-				<div class="nutr-card">
-					<h4>Comfy Cafe Design</h4>
-					<p>
-						Warm colours, comfortable seating,
-						and an atmosphere that feels calm instead of intimidating.
-					</p>
-				</div>
-
-				<div class="nutr-card">
-					<h4>Flexible options</h4>
-					<p>
-						Whether you’re focused on recovery, muscle gain,
-						or just want something enjoyable, there’s a clear choice for you.
-					</p>
-				</div>
-
-				<div class="nutr-card">
-					<h4>Made to fit your day</h4>
-					<p>
-						Stop in quickly or stay a while.
-						Zoehi’s works around real schedules and real routines.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- COMMUNITY EXPERIENCE -->
-	<section class="community container">
-		<h2 class="section-title">A place to connect</h2>
-		<p class="section-sub">
-			Zoehi’s is meant to feel social without being overwhelming.
-		</p>
-
-		<div class="community-grid">
-			<article class="comm-card">
-				<img src="https://image2url.com/r2/default/images/1770773200363-f526e0eb-bcf4-49bf-8fb2-0cbc6a42d7df.jpg"
-				     alt="People socializing in a lounge">
-				<h4>Good energy</h4>
-				<p>
-					A comfortable space to meet people,
-					catch up with friends, or unwind after a workout.
-				</p>
-			</article>
-
-			<article class="comm-card">
-				<img src="https://image2url.com/r2/default/images/1770773353587-9bc625e4-0168-4cb4-b4f0-db1030db1db7.jpg"
-				     alt="Group fitness community">
-				<h4>Shared goals</h4>
-				<p>
-					Being around others who care about their health
-					can be motivating without feeling competitive.
-				</p>
-			</article>
-
-			<article class="comm-card">
-				<img src="https://image2url.com/r2/default/images/1770773180468-a97ad911-d9df-44e9-8329-10b236e5b459.jpg"
-				     alt="People enjoying drinks together">
-				<h4>Take your time</h4>
-				<p>
-					Comfortable seating, Wi-Fi, and a laid-back vibe
-					that makes it easy to stay longer than planned.
-				</p>
-			</article>
-		</div>
-	</section>
-
-	<!-- TESTIMONIALS -->
-	<section class="testimonials container">
-		<h2 class="section-title">What people say</h2>
-
-		<div class="grid testimonials-grid">
-			<article class="testimonial">
-				<blockquote>
-					“I finally found a protein shake I actually enjoy drinking.
-					The chocolate one tastes like dessert, not powder.”
-				</blockquote>
-				<cite>— Serena Williams, competitive athlete</cite>
-			</article>
-
-			<article class="testimonial">
-				<blockquote>
-					“I stop by even on rest days. It’s filling, not overly sweet,
-					and it doesn’t feel heavy.”
-				</blockquote>
-				<cite>— Tom Cruise, personal trainer</cite>
-			</article>
-
-			<article class="testimonial">
-				<blockquote>
-					“The lounge nights are my favourite. Good music, good people,
-					and really good shakes.”
-				</blockquote>
-				<cite>— Terry Crews, regular</cite>
-			</article>
-		</div>
-	</section>
-</main>
-
-
-<footer id="contact" class="site-footer">
-	<div class="container footer-grid">
-		<div>
-			<h3>Main lounge</h3>
-			<p>403 Jeune Toille Boulevard</p>
-			<p>Downtown Athletic District</p>
-			<p>Free parking available</p>
-		</div>
-
-		<div>
-			<h3>Hours</h3>
-			<p>Monday to Friday: 6:00 AM – 10:00 PM</p>
-			<p>Saturday and Sunday: 8:00 AM – 8:00 PM</p>
-			<p>Open daily</p>
-		</div>
-
-		<div>
-			<h3>Your first shake is on us</h3>
-			<p>
-				New here? Sign up for our community list and enjoy a free shake on your first visit.
-			</p>
-		</div>
-	</div>
-
-	<div class="container footer-grid">
-		<div>
-			<h4>Contact</h4>
-			<p>zoehis@gmail.com</p>
-			<p>+1 (343) 555-4567</p>
-		</div>
-
-		<div>
-			<h4>Follow</h4>
-			<p>
-				<a href="#">Instagram</a> • <a href="#">TikTok</a> • <a href="#">Facebook</a>
-			</p>
-		</div>
-	</div>
-
-	<div class="footer-bottom">
-		© <span id="year"></span> Zoehi’s Shake Shack. All rights reserved.
-	</div>
-</footer>
-<script>
-	// Set the current year in the footer
-	document.getElementById('year').textContent = new Date().getFullYear();
+</body>
+</html>
